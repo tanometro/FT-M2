@@ -1,0 +1,99 @@
+// Conteindo del Home
+
+.home {
+  .img-h{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro {
+    margin-top: 10px;
+    h2 {
+      .titulos();
+      padding: 15px;
+    }
+
+    p {
+      .textos();
+      padding: 0 15px;
+    }
+  }
+
+  .music-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    img {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+    }
+  }
+
+  .musica-nueva {
+    padding: 15px;
+
+    h3 {
+      .titulos();
+      margin-top: 11px;
+    }
+
+    p {
+      .textos();
+      margin-top: 13px;
+    }
+  }
+
+  .actual {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+
+    .actual-text {
+      .textos();
+      width: 50%;
+
+      h3 {
+        .titulos();
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 26px;
+      }
+
+      .btn {
+        .botones(white,10px);
+        background-color: @header-font-color;
+        padding: 5px 5px 5px 5px;
+        width: 25%;
+        text-align: center;
+      }
+      .btn:hover {
+        background-color: red;
+        color: green;
+        cursor: pointer;
+      }
+    }
+
+    .actual-img {
+      width: 46%;
+      margin-left: 4%;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media scren and (@phone){
+  
+}
